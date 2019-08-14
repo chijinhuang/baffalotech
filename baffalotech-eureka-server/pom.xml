@@ -9,7 +9,6 @@
 		<artifactId>baffalotech-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.baffalotech.eureka</groupId>
 	<artifactId>baffalotech-eureka-server</artifactId>
 	<name>baffalotech-eureka-server</name>
 	<url>http://maven.apache.org</url>

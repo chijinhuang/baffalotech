@@ -5,11 +5,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.baffalotech.integration</groupId>
+		<groupId>com.baffalotech</groupId>
 		<artifactId>baffalotech-integration</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.baffalotech.integration.demo</groupId>
 	<artifactId>baffalotech-integration-demo</artifactId>
 	<name>baffalotech-integration-demo</name>
 	<url>http://maven.apache.org</url>
@@ -42,13 +41,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.baffalotech.integration</groupId>
+			<groupId>com.baffalotech</groupId>
 			<artifactId>baffalotech-integration-http</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.baffalotech.integration</groupId>
+			<groupId>com.baffalotech</groupId>
 			<artifactId>baffalotech-integration-tcp</artifactId>
 			<version>${project.version}</version>
 		</dependency>

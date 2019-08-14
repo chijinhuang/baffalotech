@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.baffalotech.integration</groupId>
+		<groupId>com.baffalotech</groupId>
 		<artifactId>baffalotech-integration</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>

@@ -9,7 +9,6 @@
 		<artifactId>baffalotech-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.baffalotech.zipkin</groupId>
 	<artifactId>baffalotech-zipkin-server</artifactId>
 	<name>baffalotech-zipkin-server</name>
 	<url>http://maven.apache.org</url>

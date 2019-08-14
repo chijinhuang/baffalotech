@@ -6,7 +6,6 @@
 		<artifactId>baffalotech-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.baffalotech.integration</groupId>
 	<artifactId>baffalotech-integration</artifactId>
 	<name>baffalotech-integration</name>
 	<packaging>pom</packaging>
