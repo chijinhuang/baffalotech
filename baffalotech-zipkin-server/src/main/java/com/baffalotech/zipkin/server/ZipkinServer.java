@@ -1,4 +1,4 @@
-package org.baffalotech.zipkin.server;
+package com.baffalotech.zipkin.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

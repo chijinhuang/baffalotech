@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.baffalotech</groupId>
 		<artifactId>baffalotech-integration</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.1</version>
 	</parent>
 	<artifactId>baffalotech-integration-http</artifactId>
 	<name>baffalotech-integration-http</name>
@@ -17,13 +17,13 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.baffalotech.integration</groupId>
+			<groupId>com.baffalotech</groupId>
 			<artifactId>baffalotech-integration-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.baffalotech.integration</groupId>
+			<groupId>com.baffalotech</groupId>
 			<artifactId>baffalotech-integration-tcp</artifactId>
 			<version>${project.version}</version>
 		</dependency>
