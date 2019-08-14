@@ -6,7 +6,7 @@
 
 	<groupId>com.baffalotech</groupId>
 	<artifactId>baffalotech-parent</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>baffalotech-parent</name>
@@ -535,7 +535,7 @@
 				<gpg.homedir>C:/Users/chijinhuang/AppData/Roaming/gnupg</gpg.homedir>
 			</properties>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
