@@ -1,2 +1,2 @@
 # SpringBoot集成服务容器
-[![License](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/chijinhuang/baffalotech/blob/master/LICENSE) 
+[![License](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/chijinhuang/baffalotech/blob/master/LICENSE) [![Build Status](https://travis-ci.org/chijinhuang/baffalotech.svg?branch=master)](https://travis-ci.org/chijinhuang/baffalotech)
