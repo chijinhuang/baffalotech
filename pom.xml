@@ -6,7 +6,7 @@
 
 	<groupId>com.baffalotech</groupId>
 	<artifactId>baffalotech-parent</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>baffalotech-parent</name>
@@ -525,7 +525,7 @@
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<id>deploy</id>
 			<properties>
@@ -633,7 +633,17 @@
 							<serverId>sonatype-nexus-staging</serverId>
 							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+							<skipStagingRepositoryClose>false</skipStagingRepositoryClose>
 						</configuration>
+						<executions>
+							<execution>
+								<id>default-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>

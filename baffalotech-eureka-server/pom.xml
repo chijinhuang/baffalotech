@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.baffalotech</groupId>
 		<artifactId>baffalotech-parent</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>baffalotech-eureka-server</artifactId>
 	<name>baffalotech-eureka-server</name>

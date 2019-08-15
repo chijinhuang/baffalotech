@@ -1,2 +1,5 @@
-# SpringBoot集成服务容器
+# BaffaloTech Integration
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/chijinhuang/baffalotech/blob/master/LICENSE) [![Build Status](https://travis-ci.org/chijinhuang/baffalotech.svg?branch=master)](https://travis-ci.org/chijinhuang/baffalotech) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.baffalotech/baffalotech-integration-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.baffalotech/baffalotech-integration-http)  [![Dependencies](https://img.shields.io/badge/Spring%20Boot-2.1.6.RELEASE-blue.svg)](https://spring.io/projects/spring-boot) [![Dependencies](https://img.shields.io/badge/Netty-4.1.37.Final-green.svg)](https://netty.io/)
+
+## 简介
+	随着微服务的兴起，越来越多的项目采用微服务架构，而其中很大一部分是采用spring cloud全家桶实现。另外一方面，这些项目不同程度的是需要第三方系统的接入。这些对接方式可能80%以上都是基于http、webservice、tcp协议；安全认证方式也不同相同。BaffaoTech Integration是基于Netty开发的、可以作为Spring Boot内嵌服务器的NIO高性能Servlet容器，可以和SpringCloud无缝集成。
