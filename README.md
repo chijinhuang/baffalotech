@@ -48,3 +48,18 @@
 ```
 @EnableNettyServerContainer
 ```
+
+默认的http端口使用方式跟普通的Spring Boot完全一样。
+
+新增http端口：添加NettyServerConnector的Bean就可以了
+```
+@Autowired
+private NettyHttpServerConnectorFactory nettyHttpServerConnectorFactory;
+.....
+@Bean
+public Connector createNettyHttpConnector()
+{
+	return nettyHttpServerConnectorFactory.createNettyHttpServerConnector("test",8081);
+}
+```
+
