@@ -83,4 +83,35 @@ public FilterRegistrationBean tracerFilter(TracingFilter httpTraceFilter) {
 	return tracerFilterRegistrationBean;
 }
 ```
+创建TCP Connector
+```
+ @Bean
+    public Connector createTCPConnector()
+    {
+    	TCPProtocal inTcpProtocal = new TCPProtocal();
+    	inTcpProtocal.addField(new FixedLengthField("name",null, 4));
+    	inTcpProtocal.addField(new LengthField("length",0, 4));
+    	return nettyTCPFixedLengthServerConnectorFactory.create("hbnx", 8082, inTcpProtocal, inTcpProtocal, new TCPRequestHanlder() {
+			@Override
+			public void handle(TCPRequest tcpRequest, TCPResponse tcpResponse) {
+				// TODO Auto-generated method stub
+				tcpResponse.setData((new Date()).toString().getBytes());
+			}
+		});
+    }
+```
+
+给TCPConnector添加Connector,例如一下代码给tcp添加Zipkin支持,具体需要参考Demo中的zipkin包
+```
+ @Bean
+    public TCPHandler tcpTracingHandler(HttpTracing httpTracing)
+    {
+    	TCPHandler tcpHandler = TCPTracingHandler.create(httpTracing);
+    	tcpHandler.setName("hbnx");
+    	return tcpHandler;
+    }
+```
+
+## 鸣谢
+Netty对servlet的支持是来至于github的wangzihaogithub的工程：https://github.com/wangzihaogithub/netty-servlet
 
