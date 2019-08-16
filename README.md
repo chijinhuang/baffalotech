@@ -43,6 +43,7 @@
   <version>1.0.5</version>
 </dependency>
 ```
+
 启用集成容器，在启动类中添加EnableNettyServerContainer，会默认创建一个http connector
 ```
 @EnableNettyServerContainer
