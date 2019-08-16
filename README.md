@@ -19,7 +19,7 @@
 
 ## 平台架构
 
-![平台架构](https://github.com/chijinhuang/baffalotech/blob/master/platform.png)
+![平台架构](https://raw.githubusercontent.com/chijinhuang/baffalotech/master/platform.png)
 
 ## 与Mule比较
 | 功能  | BaffaloTech Integration| Mule|
