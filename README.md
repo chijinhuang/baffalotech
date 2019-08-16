@@ -63,3 +63,24 @@ public Connector createNettyHttpConnector()
 }
 ```
 
+给NettyServerConector添加Filter或者Servlet，需要给servlet或者Filter指定ConnectorName
+```
+@Bean()
+public ServletRegistrationBean cxfServlet() {
+	ServletRegistrationBean<Servlet> test = new ServletRegistrationBean(NettyProxyServlet.createNettyProxyServlet("test", new CXFServlet()), "/soap-api/*");
+	test.addInitParameter("bus", "testws");
+	test.setOrder(1121);
+	return test;
+}
+
+
+@Bean
+public FilterRegistrationBean tracerFilter(TracingFilter httpTraceFilter) {
+	FilterRegistrationBean<Filter> tracerFilterRegistrationBean = new FilterRegistrationBean<Filter>();
+	tracerFilterRegistrationBean.setFilter(NettyProxyFilter.createNettyProxyFilter("test", httpTraceFilter));
+	tracerFilterRegistrationBean.addUrlPatterns("/*");
+	tracerFilterRegistrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE+200);
+	return tracerFilterRegistrationBean;
+}
+```
+
