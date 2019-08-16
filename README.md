@@ -24,7 +24,7 @@
 ## 与Mule比较
 | 功能  | BaffaloTech Integration| Mule|
 | ---------- | -----------| -----------|
-| 协议支持   | http、webservice、TCP，其他的需要定制开发  | 基本上有现成的Connector可以选择  |
+| 协议支持   | http、webservice、TCP，其他的需要定制开发  | 基本上有现成Connector的可以选择  |
 | 社区支持   | 暂时只有作者一人支持  | 商业公司运作  |
 | IO类型   | NIO  | BIO  |
 | 底层技术栈   | 最新的Spring Boot  | 比较老的Spring版本  |
@@ -32,3 +32,10 @@
 | 集成SpringCloud   | 原生支持  | 需要改代码  |
 | 学习成本   | 基于Spring Boot,学习成本低  | 学习成本相对较高  |
 | 部署方式  | 跟Spring Boot一致  | 需要Mule服务器  |
+
+## 使用
+
+依赖
+```
+git clone git@git.coding.net:coding/WebIDE.git
+```
