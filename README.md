@@ -35,7 +35,15 @@
 
 ## 使用
 
-依赖
+添加依赖
 ```
-git clone git@git.coding.net:coding/WebIDE.git
+<dependency>
+  <groupId>com.baffalotech</groupId>
+  <artifactId>baffalotech-integration-http</artifactId>
+  <version>1.0.5</version>
+</dependency>
+```
+启用集成容器，在启动类中添加EnableNettyServerContainer，会默认创建一个http connector
+```
+@EnableNettyServerContainer
 ```
