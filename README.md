@@ -26,6 +26,7 @@
 | 社区支持   | 暂时只有作者一人支持  | 商业公司运作  |
 | IO类型   | NIO  | BIO  |
 | 底层技术栈   | 最新的Spring Boot  | 比较老的Spring版本  |
+| Servlet支持   | 服务Servlet规范  | 使用http component解析http协议  |
 | 集成SpringCloud   | 原生支持  | 需要改代码  |
 | 学习成本   | 基于Spring Boot,学习成本低  | 学习成本相对较高  |
 | 部署方式  | 跟Spring Boot一致  | 需要Mule服务器  |
