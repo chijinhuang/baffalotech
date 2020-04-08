@@ -4,8 +4,8 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
 import org.springframework.stereotype.Component;
-import com.baffalotech.integration.mvc.ContentType;
 
 /**
  * 控制器的标注

@@ -17,7 +17,6 @@ import com.baffalotech.integration.api.Connector;
 import com.baffalotech.integration.api.Container;
 import com.baffalotech.integration.http.netty.connector.NettyHttpServerConnector;
 import com.baffalotech.integration.http.netty.connector.NettyHttpServerConnectorFactory;
-import com.baffalotech.integration.http.netty.servlet.NettyServletContextInitializer;
 
 public class NettyContainerServerFactory extends AbstractServletWebServerFactory implements ApplicationContextAware{
 	
