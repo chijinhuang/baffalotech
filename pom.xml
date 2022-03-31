@@ -16,7 +16,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<spring.version>5.1.7.RELEASE</spring.version>
+		<spring.version>5.3.18</spring.version>
 		<spring.boot.version>2.1.6.RELEASE</spring.boot.version>
 		<postgresql.version>42.1.4</postgresql.version>
 		<liquibase.version>3.6.3</liquibase.version>
